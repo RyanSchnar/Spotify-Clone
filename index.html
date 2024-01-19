@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify - Web Player: Music for everyone</title>
+    <link rel="stylesheet" href="style.css"/>
+    <link rel="icon" sizes="32x32" type="image/png" href="https://open.spotifycdn.com/cdn/images/favicon32.b64ecc03.png">
+    <link rel="icon" sizes="16x16" type="image/png" href="https://open.spotifycdn.com/cdn/images/favicon16.1c487bff.png">
+    <link rel="icon" href="https://open.spotifycdn.com/cdn/images/favicon.0f31d2ea.ico"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+</head>
+<body>
+    <div class="main">
+        <div class="sidebar">
+            <div class="nav">
+                <div class="nav-option" ><a href="#" id="home"><i class="fa-solid fa-house"></i> Home</a></div>
+                <div class="nav-option"><a href="#"><i class="fa-solid fa-magnifying-glass"></i> Search</a></div>
+            </div>
+            <div class="library">
+                <div class="options">
+                    <div class="lib-option">
+                        <a href="#"><img src="./assets/library_icon.png" style="height: 1rem; width: 1rem;"> Your Library</a>
+                    </div>
+                    <div class="lib-option-btn">
+                        <div class="create-playlist">
+                            <button type="submit" class="create-playlist-btn"><i class="fa-solid fa-plus"></i></button>
+                        </div>
+                        <div class="show-more">
+                            <button type="submit" class="show-more-btn hide"><i class="fa-solid fa-arrow-right"></i></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="lib-box">
+                    <div class="playlist-box">
+                        <p class="box-p1">Create your first playlist!</p>
+                        <p class="box-p2">It's easy, we'll help you</p>
+                        <button type="button" class="badge">Create Playlist</button>
+                    </div>
+
+                    <div class="pod-box">
+                        <p class="box-p1">Let's find some podcasts to follow</p>
+                        <p class="box-p2">We'll keep you updated on new episodes</p>
+                        <button type="button" class="badge">Browse Podcasts</button>
+                    </div>
+                </div>
+            </div>      
+        </div>
+        <div class="main-content">
+            <div class="sticky-nav">
+                <div class="sticky-nav-icons">
+                    <a href="#"><img src="./assets/backward_icon.png"></a>
+                    <a href="#" class="hide"><img src="./assets/forward_icon.png"></a>
+                </div>
+                <div class="sticky-nav-options">
+                    <button class="badge nav-item hide">Explore Premium</button>
+                    <button class="badge nav-item dark-badge"><i class="fa-regular fa-circle-down" styte="margin-right: 5px"></i> Install App</button>
+                    <i class="fa-regular fa-user nav-item user-icon"></i>
+                </div>
+            </div>
+            <div class="albums">
+                <h2 id="wish">Good morning</h2>
+                <div class="top-grid-card">
+                    <a href="#">
+                        <div class="grid-card">
+                            <div class="grid-card-entities">
+                                <img src="./assets/grid-card-img-1.jpeg" class="grid-card-img" />
+                                <p class="grid-card-title">1nonly</p>
+                            </div>
+                            <button class="grid-card-btn"><i class="fa-solid fa-play"></i></button>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="grid-card">
+                            <div class="grid-card-entities">
+                                <img src="./assets/grid-card-img-2.png" class="grid-card-img" />
+                                <p class="grid-card-title">Liked Songs</p>
+                            </div>
+                            <button class="grid-card-btn"><i class="fa-solid fa-play"></i></button>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="grid-card">
+                            <div class="grid-card-entities">
+                                <img src="./assets/grid-card-img-3.jpeg" class="grid-card-img" />
+                                <p class="grid-card-title">Shakira!</p>
+                            </div>
+                            <button class="grid-card-btn"><i class="fa-solid fa-play"></i></button>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="grid-card">
+                            <div class="grid-card-entities">
+                                <img src="./assets/grid-card-img-4.jpeg" class="grid-card-img" />
+                                <p class="grid-card-title">Mobius(Bonus Soundtrack)</p>
+                            </div>
+                            <button class="grid-card-btn"><i class="fa-solid fa-play"></i></button>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="grid-card">
+                            <div class="grid-card-entities">
+                                <img src="./assets/grid-card-img-5.jpeg" class="grid-card-img" />
+                                <p class="grid-card-title">greedy</p>
+                            </div>
+                            <button class="grid-card-btn"><i class="fa-solid fa-play"></i></button>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="grid-card">
+                            <div class="grid-card-entities">
+                                <img src="./assets/grid-card-img-6.jpeg" class="grid-card-img" />
+                                <p class="grid-card-title">Central Cee</p>
+                            </div>
+                            <button class="grid-card-btn"><i class="fa-solid fa-play"></i></button>
+                        </div>
+                    </a>
+                </div>
+                <h2>Recently Played</h2>
+                <div class="cards-container">
+                    <a href="#">
+                        <div class="card">
+                            <img src="./assets/card-img-1.jpeg" class="card-img" />
+                            <p class="card-title">Top 50 - Global</p>
+                            <p class="card-info">Your daily updates of the most played...</p>
+                            <button class="card-btn"><i class="fa-solid fa-play"></i></button>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="card">
+                            <img src="./assets/card-img-2.png" class="card-img" />
+                            <p class="card-title">Liked Songs</p>
+                            <p class="card-info">Your top liked songs in one...</p>
+                            <button class="card-btn"><i class="fa-solid fa-play"></i></button>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="card">
+                            <img src="./assets/card-img-3.jpeg" class="card-img" />
+                            <p class="card-title">DyingLight(So...)</p>
+                            <p class="card-info">Pawel Blaszczak</p>
+                            <button class="card-btn"><i class="fa-solid fa-play"></i></button>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="card">
+                            <img src="./assets/card-img-4.jpeg" class="card-img" />
+                            <p class="card-title">Doja</p>
+                            <p class="card-info">Central Cee</p>
+                            <button class="card-btn"><i class="fa-solid fa-play"></i></button>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="card">
+                            <img src="./assets/card-img-5.jpeg" class="card-img" />
+                            <p class="card-title">Bunny Girl</p>
+                            <p class="card-info">1nonly, Ciscaux</p>
+                            <button class="card-btn"><i class="fa-solid fa-play"></i></button>
+                        </div>
+                    </a>
+                </div>
+                <h2>Your top mixes</h2>
+                <div class="cards-container">
+                    <a href="#">
+                        <div class="card">
+                            <img src="./assets/card-img-6.jpeg" class="card-img" />
+                            <p class="card-title">Lynyrd Skynyrd...</p>
+                            <p class="card-info">Creedence Clearwater Revival,...</p>
+                            <button class="card-btn"><i class="fa-solid fa-play"></i></button>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="card">
+                            <img src="./assets/card-img-7.jpeg" class="card-img" />
+                            <p class="card-title">Chill Mix</p>
+                            <p class="card-info">The Weekend, Glass Animals, Alexey...</p>
+                            <button class="card-btn"><i class="fa-solid fa-play"></i></button>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="card">
+                            <img src="./assets/card-img-8.jpeg" class="card-img" />
+                            <p class="card-title">Upbeat Mix</p>
+                            <p class="card-info">Childish Gambino, Tate McRae, ATB and more</p>
+                            <button class="card-btn"><i class="fa-solid fa-play"></i></button>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="card">
+                            <img src="./assets/card-img-9.jpeg" class="card-img" />
+                            <p class="card-title">2010s Mix</p>
+                            <p class="card-info">Darci, Azealia Banks, The...</p>
+                            <button class="card-btn"><i class="fa-solid fa-play"></i></button>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="card">
+                            <img src="./assets/card-img-10.jpeg" class="card-img" />
+                            <p class="card-title">Indie Mix</p>
+                            <p class="card-info">Mr. Twin Sister and more</p>
+                            <button class="card-btn"><i class="fa-solid fa-play"></i></button>
+                        </div>
+                    </a>
+                </div>
+                <h2>2023 Wrapped Globally</h2>
+                <div class="cards-container">
+                    <a href="#">
+                        <div class="card">
+                            <img src="./assets/card-img-11.jpeg" class="card-img" />
+                            <p class="card-title">Top Tracks 2023</p>
+                            <p class="card-info">The most streamed songs of 2023.Cover...</p>
+                            <button class="card-btn"><i class="fa-solid fa-play"></i></button>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="card">
+                            <img src="./assets/card-img-12.jpeg" class="card-img" />
+                            <p class="card-title">Top Groups 2023</p>
+                            <p class="card-info">The most streamed groups of 2023...</p>
+                            <button class="card-btn"><i class="fa-solid fa-play"></i></button>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="card">
+                            <img src="./assets/card-img-13.jpeg" class="card-img" />
+                            <p class="card-title">Top throwbacks...</p>
+                            <p class="card-info">The songs with the biggest throwback...</p>
+                            <button class="card-btn"><i class="fa-solid fa-play"></i></button>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="card">
+                            <img src="./assets/card-img-14.jpeg" class="card-img" />
+                            <p class="card-title">Top Artists 2023</p>
+                            <p class="card-info">The most streamed artists of 2023. Cover...</p>
+                            <button class="card-btn"><i class="fa-solid fa-play"></i></button>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="card">
+                            <img src="./assets/card-img-15.jpeg" class="card-img" />
+                            <p class="card-title">Songs That...</p>
+                            <p class="card-info">Songs that stuck by us through tears and...</p>
+                            <button class="card-btn"><i class="fa-solid fa-play"></i></button>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="footer">
+                <div class="line"></div>
+                <div class="footer-info">
+                    <div class="footer-links">
+                        <div id="legal"><a href="#">Legal</a></div>
+                        <div id="privacy-center"><a href="#">Privacy Center</a></div>
+                        <div id="privacy-policy"><a href="#">Privacy Policy</a></div>
+                        <div id="cookies"><a href="#">Cookies</a></div>
+                        <div id="about-ads"><a href="#">About Ads</a></div>
+                        <div id="accessibility"><a href="#">Accessibility</a></div>
+                    </div>
+                    <div class="copyright">&copy;2024 Spotify AB</div>
+                </div>
+            </div>
+        </div>
+        <div class="music-player">music player</div>
+    </div>
+</body>
+</html>
