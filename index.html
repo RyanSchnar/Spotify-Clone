@@ -17,8 +17,8 @@
     <div class="main">
         <div class="sidebar">
             <div class="nav">
-                <div class="nav-option" ><a href="#" id="home"><i class="fa-solid fa-house"></i> Home</a></div>
-                <div class="nav-option"><a href="#"><i class="fa-solid fa-magnifying-glass"></i> Search</a></div>
+                <div class="nav-option" ><a href="#" id="home"><i class="fa-solid fa-house"></i> <span>Home</span> </a></div>
+                <div class="nav-option"><a href="#" id="search"><i class="fa-solid fa-magnifying-glass"></i> <span>Search</span> </a></div>
             </div>
             <div class="library">
                 <div class="options">
@@ -57,12 +57,12 @@
                 </div>
                 <div class="sticky-nav-options">
                     <button class="badge nav-item hide">Explore Premium</button>
-                    <button class="badge nav-item dark-badge"><i class="fa-regular fa-circle-down" styte="margin-right: 5px"></i> Install App</button>
+                    <button class="badge nav-item dark-badge"><i class="fa-regular fa-circle-down"></i> <span>Install App</span> </button>
                     <i class="fa-regular fa-user nav-item user-icon"></i>
                 </div>
             </div>
             <div class="albums">
-                <h2 id="wish">Good morning</h2>
+                <h2 id="greeting"></h2>
                 <div class="top-grid-card">
                     <a href="#">
                         <div class="grid-card">
@@ -276,22 +276,34 @@
             </div>
             <div class="player-controls">
                 <div class="playback-btn">
-                    <button class="shuffle-btn" type="button"><i class="fa-solid fa-shuffle"></i></button>
-                    <button class="previous-btn" type="button"><i class="fa-solid fa-backward-step"></i></button>
-                    <button class="play-btn" type="button"><i class="fa-solid fa-circle-play"></i></button>
-                    <button class="forward-btn" type="button"><i class="fa-solid fa-forward-step"></i></button>
-                    <button class="repeat-btn" type="button"><i class="fa-solid fa-repeat"></i></button>
+                    <button id="shuffle-btn-btn" type="button"><img id="shuffle-btn-img" src="./assets/player_icon1.png" /></button>
+                    <button id="previous-btn-btn" type="button"><img id="previous-btn-img" src="./assets/player_icon2.png" /></button>
+                    <button id="play-btn-btn" type="button"><img id="play-btn-img" src="./assets/player_icon3.png"></button>
+                    <button id="forward-bt-btn" type="button"><img id="forward-btn-img" src="./assets/player_icon4.png" /></button>
+                    <button id="repeat-btn-btn" type="button"><img id="repeat-btn-img" src="./assets/player_icon5.png" /></button>
                 </div>
                 <div class="playback-bar">
-                    <span class="start-time">0:00</span>
+                    <div class="start-time">0:00</div>
                     <input type="range" value=0 class="progress-bar">
-                    <span class="end-time">2:51</span>
+                    <div class="end-time">2:51</div>
                 </div>
             </div>
             <div class="controls">
-                
+                <button id="npv-btn-btn" type="button"><img id="npv-btn-img" src="./assets/controls_icon1.png"></button>
+                <button id="lyrics-btn-btn" type="button"><img id="lyrics-btn-img" src="./assets/controld_icon2.png"></button>
+                <button id="queue-btn-btn" type="button"><img id="queue-btn-img" src="./assets/controls_icon3.png"></button>
+                <button id="connect-btn-btn" type="button"><img id="connect-btn-img" src="./assets/controls_icon4.png"></button>
+                <div class="vol-control">
+                    <button id="mute-btn-btn"><img id="mute-btn-img" src="./assets/controls_icon5.png"></button>
+                    <input type="range" class="vol-bar" value=100  />
+                </div>
             </div>
         </div>
     </div>
+
+    <script>
+        document.getElementById('greeting').innerHTML = (new Date().getHours() >= 12 && new Date().getHours() < 18 ? 
+        'Good Afternoon' : (new Date().getHours() >= 18 ? 'Good Evening' : 'Good Morning'));
+    </script>
 </body>
 </html>
